@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Detail from './Components/detail'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import BeerList from './Components/beerList'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/AllBeer" element={<BeerList />} />
+        <Route path="/Detail/:_id" element={<Detail />} />
+      </Routes>
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

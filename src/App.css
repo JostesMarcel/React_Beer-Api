@@ -1,38 +1,98 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{
+  font-family: 'Roboto Slab', serif;
+}
+
+.beerImg{
+  width: 7vh;
+  height: 25vh;
+}
+.yellowLine{
+  background-color: #ffca41;
+  text-align: left;
+  line-height: 40px;
+}
+.frontImage{
+  width: 100%;
+}
+.middleDiv{
+  margin: 0px 20px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  padding-left: 20px;
+  font-size: 2em;
+  font-weight: 700;
+}
+.overview{
+  margin: 50px 50px 20px 30px;
+  display: flex;
+  padding-bottom:40px;
+  border-bottom: 1px solid black;
+}
+.flex{
+  margin-left: 20px;
+  
+}
+.yellowp{
+  color: #ffca41;
+  font-weight: 900;
+}
+.yellowp2{
+  text-align: left;
+  color: #ffca41;
+  font-weight: 900;
+}
+.btn{
+  background-color: #ffca41;
+  border-radius: 15px;
+  border: none;
+  font-weight: 900;
+  padding: 2px 20px;
+  color: #fff;
+}
+.detailwrapper{
+  margin: 20px 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.detailImg{
+  width: 10vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  text-align: left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grayP{
+  text-align: left;
+  color: #333;
+  line-height: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.grayP span{
+  margin-left: 150px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disc{
+  text-align: left;
+  width: 35vh;
+}
+.backBtn{
+  color: #fff;
+  background-color: #ffca41;
+  border: none;
+  border-radius: 40px;
+  font-size: 1em;
+} 
+.footer{
+  text-align: center;
+  list-style: none;
+  background-color: #ffca41;
+  position: sticky;
+  bottom: 0;
+  margin-top: 10%;
+}
+.logo{
+  padding: 5px;
+}
+.logo:hover{
+  transition: all .7s linear;
+  transform: rotate(360deg);
 }
