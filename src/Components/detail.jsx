@@ -16,7 +16,7 @@ const Detail = () => {
             console.log(json);
             setName(json)
             })
-    }, []);
+    }, [apiId._id]);
 
     return (
         <>
